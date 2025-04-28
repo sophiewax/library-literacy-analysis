@@ -96,8 +96,8 @@ Questions for future study:
 
 Further research could incorporate more variables, use regression models, or explore spatial patterns with mapping tools.
 
-**Studnets: Follow the above lesson to determine if there is a correlation between public library access and literacy rates using the provided csv files. 
-**
+Students: Follow the above lesson to determine if there is a correlation between public library access and literacy rates using the provided csv files. 
+
 
 After visualizing the relationshjip with the scatterplots and running a correlation test, reflect on what factors influence literacy beyond libraries.
 
