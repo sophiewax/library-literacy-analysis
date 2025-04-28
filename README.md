@@ -15,13 +15,14 @@ By the end of this tutorial, you will know how to:
 This project demonstrates how digital humanities methods like data analysis can offer insights into infrastructure, social equity, and public policy.
 
 **Prerequisites**
+
 You should have:
--Basic familiarity with Python
--Access to Jupyter Notebook, Google Colab, or a similar Python environment
--The following Python libraries installed: pandas, matplotlib, seaborn
--Install libraries (if needed) using pip:
--python
-Copy code
+- Basic familiarity with Python
+- Access to Jupyter Notebook, Google Colab, or a similar Python environment
+- The following Python libraries installed: pandas, matplotlib, seaborn
+- Install libraries (if needed) using pip:
+- python
+ Copy code
 !pip install pandas matplotlib seaborn
 
 **Step 1: Import Libraries**
