@@ -26,10 +26,10 @@ You should have:
 
 **Step 1: Import Libraries using python**
 
-Copy the following the code
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+Copy the following the code: 
+- import pandas as pd
+- import matplotlib.pyplot as plt
+- import seaborn as sns
 
 **Step 2: Load the Data**
 You will need two datasets:
@@ -44,6 +44,7 @@ python
 Copy code
 libraries = pd.read_csv('libraries_by_state.csv')
 literacy = pd.read_csv('literacy_rates.csv')
+
 Example structures:
 
 libraries_by_state.csv columns: State, Library_Count
