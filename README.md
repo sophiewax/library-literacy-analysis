@@ -21,13 +21,12 @@ You should have:
 - Access to Jupyter Notebook, Google Colab, or a similar Python environment
 - The following Python libraries installed: pandas, matplotlib, seaborn
 - Install libraries (if needed) using pip:
-- python
- Copy code
-!pip install pandas matplotlib seaborn
+- python, use code: !pip install pandas matplotlib seaborn
 
-**Step 1: Import Libraries**
-python
-Copy code
+
+**Step 1: Import Libraries using python**
+
+Copy the following the code
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
