@@ -2,6 +2,7 @@
 Final project: Exploring public library access and literacy rates with Python
 
 **Introduction**
+
 Public libraries have long been pillars of educational access, providing free resources to communities across the United States. Literacy rates, however, vary widely by region, raising questions about the relationship between library availability and educational outcomes. This lesson will teach you how to use Python to explore this relationship through basic data analysis.
 
 By the end of this tutorial, you will know how to:
