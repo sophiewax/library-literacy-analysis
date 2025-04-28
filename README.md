@@ -37,24 +37,15 @@ You will need two datasets:
 2. Adult literacy rates by state (e.g., from NCES)
 
 Assume you have two CSV files:
-1. libraries_by_state.csv
-2. literacy_rates.csv
-
-python
-Copy code
-libraries = pd.read_csv('libraries_by_state.csv')
-literacy = pd.read_csv('literacy_rates.csv')
+1. libraries_by_state.csv; libraries = pd.read_csv('libraries_by_state.csv')
+2. literacy_rates.csv ; literacy = pd.read_csv('literacy_rates.csv')
 
 Example structures:
-
-libraries_by_state.csv columns: State, Library_Count
-
-literacy_rates.csv columns: State, Literacy_Rate
+- libraries_by_state.csv columns: State, Library_Count
+- literacy_rates.csv columns: State, Literacy_Rate
 
 **Step 3: Merge the Datasets**
-python
-Copy code
-data = pd.merge(libraries, literacy, on='State')
+data = pd.merge(libraries, literacy, on='State')  
 data.head()
 
 **Step 4: Calculate Library Density**
