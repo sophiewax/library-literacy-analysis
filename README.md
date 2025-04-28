@@ -54,54 +54,45 @@ If you have state population data, calculate libraries per 100,000 residents usi
 
 If no population data, proceed with raw counts.
 
-**Step 5: Visualize the Data**
-Scatterplot of library count vs literacy rate:  
+**Step 5: Visualize the Data for Scatterplot of library count vs literacy rate:**
 
 Copy the following python code:  
+- plt.figure(figsize=(10,6))  
+- sns.scatterplot(data=data, x='Library_Count', y='Literacy_Rate')  
+- plt.title('Public Libraries vs Literacy Rate by State')  
+- plt.xlabel('Number of Libraries')
+- plt.ylabel('Literacy Rate (%)')
+- plt.grid(True)
+- plt.show()
+- Scatterplot with library density (optional):
 
-plt.figure(figsize=(10,6))  
+In a seperate block copy the following python code for scatterplot with library density (optional):
+- sns.scatterplot(data=data, x='Libraries_per_100k', y='Literacy_Rate')
 
-sns.scatterplot(data=data, x='Library_Count', y='Literacy_Rate')  
-
-plt.title('Public Libraries vs Literacy Rate by State')  
-
-plt.xlabel('Number of Libraries')
-plt.ylabel('Literacy Rate (%)')
-plt.grid(True)
-plt.show()
-Scatterplot with library density (optional):
-
-python
-Copy code
-sns.scatterplot(data=data, x='Libraries_per_100k', y='Literacy_Rate')
-Step 6: Correlation Analysis
+**Step 6: Correlation Analysis**
 Calculate Pearson correlation coefficient:
+- correlation = data['Library_Count'].corr(data['Literacy_Rate'])
+- print(f'Correlation between number of libraries and literacy rate: {correlation:.2f}')
 
-python
-Copy code
-correlation = data['Library_Count'].corr(data['Literacy_Rate'])
-print(f'Correlation between number of libraries and literacy rate: {correlation:.2f}')
-Or with library density:
 
-python
-Copy code
-correlation = data['Libraries_per_100k'].corr(data['Literacy_Rate'])
-print(f'Correlation between library density and literacy rate: {correlation:.2f}')
+Or calculate with library density using the following code:
+- correlation = data['Libraries_per_100k'].corr(data['Literacy_Rate'])
+- print(f'Correlation between library density and literacy rate: {correlation:.2f}')
+
+  
 Interpretation:
-
-Closer to 1: strong positive relationship
-
-Closer to 0: little to no relationship
-
-Closer to -1: strong negative relationship
+- Closer to 1: strong positive relationship
+- Closer to 0: little to no relationship
+- Closer to -1: strong negative relationship
 
 **Step 7: Reflection and Future Research**
 This basic analysis provides an entry point into understanding how public infrastructure like libraries may relate to educational outcomes. However, many factors influence literacy, including income, school funding, internet access, and language diversity.
 
 Questions for future study:
--How do poverty rates affect the relationship between library access and literacy?
--Are there urban/rural differences in library impacts?
--How have literacy rates changed over time with library expansions or closures?
+- How do poverty rates affect the relationship between library access and literacy?
+- Are there urban/rural differences in library impacts?
+- How have literacy rates changed over time with library expansions or closures?
+
 
 Further research could incorporate more variables, use regression models, or explore spatial patterns with mapping tools.
 
