@@ -45,8 +45,8 @@ Example structures:
 - literacy_rates.csv columns: State, Literacy_Rate
 
 **Step 3: Merge the Datasets**
-1. data = pd.merge(libraries, literacy, on='State')  
-2. data.head()
+- data = pd.merge(libraries, literacy, on='State')  
+- data.head()
 
 **Step 4: Calculate Library Density**
 If you have state population data, calculate libraries per 100,000 residents using the following code: 
@@ -95,6 +95,12 @@ Questions for future study:
 
 
 Further research could incorporate more variables, use regression models, or explore spatial patterns with mapping tools.
+
+**Studnets: Follow the above lesson to determine if there is a correlation between public library access and literacy rates using the provided csv files. 
+**
+
+After visualizing the relationshjip with the scatterplots and running a correlation test, reflect on what factors influence literacy beyond libraries.
+
 
 **References**
 1. Institute of Museum and Library Services. Public Libraries Survey Data.
