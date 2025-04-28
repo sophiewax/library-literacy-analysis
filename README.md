@@ -45,23 +45,26 @@ Example structures:
 - literacy_rates.csv columns: State, Literacy_Rate
 
 **Step 3: Merge the Datasets**
-data = pd.merge(libraries, literacy, on='State')  
-data.head()
+1. data = pd.merge(libraries, literacy, on='State')  
+2. data.head()
 
 **Step 4: Calculate Library Density**
-If you have state population data, calculate libraries per 100,000 residents:
-python
-Copy code
-data['Libraries_per_100k'] = (data['Library_Count'] / data['Population']) * 100000
+If you have state population data, calculate libraries per 100,000 residents using the following code: 
+- data['Libraries_per_100k'] = (data['Library_Count'] / data['Population']) * 100000
+
 If no population data, proceed with raw counts.
 
 **Step 5: Visualize the Data**
-Scatterplot of library count vs literacy rate:
-python
-Copy code
-plt.figure(figsize=(10,6))
-sns.scatterplot(data=data, x='Library_Count', y='Literacy_Rate')
-plt.title('Public Libraries vs Literacy Rate by State')
+Scatterplot of library count vs literacy rate:  
+
+Copy the following python code:  
+
+plt.figure(figsize=(10,6))  
+
+sns.scatterplot(data=data, x='Library_Count', y='Literacy_Rate')  
+
+plt.title('Public Libraries vs Literacy Rate by State')  
+
 plt.xlabel('Number of Libraries')
 plt.ylabel('Literacy Rate (%)')
 plt.grid(True)
