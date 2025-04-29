@@ -2,8 +2,8 @@
 Final project: Programming Historian lesson exploring public library access and literacy rates with Python
 
 **Introduction**
-
-Public libraries have long been pillars of educational access, providing free resources to communities across the United States. Literacy rates, however, vary widely by region, raising questions about the relationship between library availability and educational outcomes. This project explores the correlation between public library access and regional literacy rates across the United States. The guiding research question is: How does the density and availability of public libraries correlate with literacy levels, particularly in regions affected by systemic inequalities? This study explores how disparities in library infrastructure may reveal larger patterns of educational inequity, especially between rural and urban areas, and across economically disadvantaged regions.
+Access to public libraries has long been recognized as a crucial factor in promoting literacy, education, and civic engagement. Studies show that areas with greater library access often exhibit higher literacy rates and educational attainment (NCES, 2020). Yet public investment in libraries varies widely across regions, potentially contributing to inequities in literacy outcomes.
+This project explores the question: How does access to public libraries correlate with state-level literacy rates across the United States? Using Python and publicly available datasets, this lesson teaches readers how to analyze, visualize, and interpret geographic and educational data.
 
 **Data Sources:**
 1. National Center for Education Statistics (NCES). Public Libraries Survey (PLS) Data and Reports.
@@ -17,27 +17,34 @@ Available at: https://www.ala.org/news/state-americas-libraries-report-2023
 5. Pew Research Center. Public Library Usage and Importance Survey Report (2016).
 Full report: https://www.pewresearch.org/internet/2016/09/09/libraries-2016/
 
+These sources offer reliable, government-backed data suitable for exploring educational equity through spatial analysis.
+
 **Methods**
-1.	Data Cleaning:
-- Cleaning steps included removing duplicate entries, standardizing state names, and filtering for active library branches.
-- Standardized state names and abbreviations across datasets.
-- Filtered public library data to active, physical branches only.
-2.	Data Integration:
-- Merged literacy rates with library density information at the state level.
-- Created new variables, such as libraries per 100,000 residents, for better comparability.
-3.	Preparation for Spatial Analysis:
-- Datasets formatted for GIS visualization (CSV files ready for upload into ArcGIS).
-- Plan to create heat maps displaying Library density by region, Literacy rates, and Poverty overlays (future work)
+The project workflow includes the following steps:
+1. Loading Datasets: CSV files containing library locations and literacy rates were imported using pandas.
+2. Data Cleaning: Relevant columns were selected, missing values were handled, and datasets were prepared for analysis.
+3. Data Merging: Literacy rates were merged with library counts by state, allowing for comparison.
+4. Statistical Analysis: Calculated library density (libraries per capita) and compared it to literacy rates.
+5. Visualization: Bar charts were created to display libraries per state and literacy rates.
 
-Preliminary observations suggest that states with higher library access tend to have higher literacy rates, while regions with fewer libraries per capita often experience lower literacy. Rural areas particularly demonstrate these disparities, suggesting that geographic isolation compounds educational inequality.
+All analysis was conducted using Python, primarily in Jupyter Notebook, using libraries such as pandas, matplotlib, and geopandas.
 
-Preliminary visualization efforts suggest notable regional disparities, particularly in rural Southern states. Full GIS mapping is in progress and will be included in future versions.
-
-## Results
+**Results**
 
 Analysis indicates a strong geographic correlation between public library density and literacy rates. States with a higher number of libraries per capita — such as Vermont, Massachusetts, and Minnesota — tend to report higher literacy rates. Conversely, rural regions in the South and parts of the West, such as Mississippi and New Mexico, show lower literacy rates alongside lower library access.
 
+**Discussion**
+These results suggest that access to public libraries may play an important role in supporting adult literacy at the state level. However, the relationship is not uniform; socioeconomic factors such as poverty rates, rural-urban divides, and educational funding also likely contribute to disparities. Further research incorporating poverty data and more sophisticated geographic analysis would strengthen the conclusions.
 
+**Future Directions**
+1. Socioeconomic Variables: Integrate poverty and educational spending data to better model the factors influencing literacy rates.
+2. Temporal Analysis: Investigate changes over time in library access and literacy rates using longitudinal data.
+
+**Conclusion**
+This project demonstrates how digital humanities methods, particularly basic data science and mapping techniques, can be used to uncover patterns of educational equity in the United States. It also highlights the challenges of integrating geographic data and the importance of robust datasets for spatial analysis.
+
+
+**Programming Lesson**
 **Objectives:**
 By the end of this tutorial, you will know how to:
 - Load public datasets into Python
@@ -49,7 +56,6 @@ By the end of this tutorial, you will know how to:
 This project demonstrates how digital humanities methods like data analysis can offer insights into infrastructure, social equity, and public policy.
 
 **Prerequisites**
-
 You should have:
 - Basic familiarity with Python
 - Access to Jupyter Notebook, Google Colab, or a similar Python environment
@@ -57,7 +63,7 @@ You should have:
 - Install libraries (if needed) using pip:
 - python, use code: !pip install pandas matplotlib seaborn
 
-
+**Step By Step Tutorial**
 **Step 1: Import Libraries using python**
 
 Copy the following the code: 
