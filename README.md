@@ -1,5 +1,5 @@
 # library-literacy-analysis
-Final project: Exploring public library access and literacy rates with Python
+Final project: Programming Historian lesson exploring public library access and literacy rates with Python
 
 **Introduction**
 
