@@ -3,7 +3,7 @@ Final project: Exploring public library access and literacy rates with Python
 
 **Introduction**
 
-Public libraries have long been pillars of educational access, providing free resources to communities across the United States. Literacy rates, however, vary widely by region, raising questions about the relationship between library availability and educational outcomes. This project investigates the relationship between public library access and regional literacy rates across the United States. The guiding research question is: How does the density and availability of public libraries correlate with literacy levels, particularly in regions affected by systemic inequalities? This study explores how disparities in library infrastructure may reveal larger patterns of educational inequity, especially between rural and urban areas, and across economically disadvantaged regions.
+Public libraries have long been pillars of educational access, providing free resources to communities across the United States. Literacy rates, however, vary widely by region, raising questions about the relationship between library availability and educational outcomes. This project explores the correlation between public library access and regional literacy rates across the United States. The guiding research question is: How does the density and availability of public libraries correlate with literacy levels, particularly in regions affected by systemic inequalities? This study explores how disparities in library infrastructure may reveal larger patterns of educational inequity, especially between rural and urban areas, and across economically disadvantaged regions.
 
 **Data Sources:**
 1. National Center for Education Statistics (NCES). Public Libraries Survey (PLS) Data and Reports.
@@ -19,6 +19,7 @@ Full report: https://www.pewresearch.org/internet/2016/09/09/libraries-2016/
 
 **Methods**
 1.	Data Cleaning:
+- Cleaning steps included removing duplicate entries, standardizing state names, and filtering for active library branches.
 - Standardized state names and abbreviations across datasets.
 - Filtered public library data to active, physical branches only.
 2.	Data Integration:
@@ -30,7 +31,14 @@ Full report: https://www.pewresearch.org/internet/2016/09/09/libraries-2016/
 
 **Results**
 Preliminary observations suggest that states with higher library access tend to have higher literacy rates, while regions with fewer libraries per capita often experience lower literacy. Rural areas particularly demonstrate these disparities, suggesting that geographic isolation compounds educational inequality.
-  
+
+Preliminary visualization efforts suggest notable regional disparities, particularly in rural Southern states. Full GIS mapping is in progress and will be included in future versions.
+
+## Results
+
+Preliminary analysis indicates a strong geographic correlation between public library density and literacy rates. States with a higher number of libraries per capita — such as Vermont, Massachusetts, and Minnesota — tend to report higher literacy rates. Conversely, rural regions in the South and parts of the West, such as Mississippi and New Mexico, show lower literacy rates alongside lower library access.
+
+
 **Objectives:**
 By the end of this tutorial, you will know how to:
 - Load public datasets into Python
