@@ -106,6 +106,7 @@ data.head()
 ```
 
 **Step 4: Calculate Library Density**
+
 If you have state population data, calculate libraries per 100,000 residents using the following code: 
 ```python
 data['Libraries_per_100k'] = (data['Library_Count'] / data['Population']) * 100000
@@ -153,6 +154,7 @@ Interpretation:
 - Closer to -1: strong negative relationship
 
 **Step 7: Reflection and Future Research**
+
 This basic analysis provides an entry point into understanding how public infrastructure like libraries may relate to educational outcomes. However, many factors influence literacy, including income, school funding, internet access, and language diversity.
 
 Questions for future study:
@@ -162,10 +164,12 @@ Questions for future study:
 
 
 **Final Note for Students**
+
 Follow the steps in this tutorial to determine if there is a correlation between public library access and literacy rates using the provided datasets.
 After visualizing the relationships and running correlation tests, reflect on what additional factors might influence literacy beyond public libraries.
 
 **References**
+
 1. Institute of Museum and Library Services. Public Libraries Survey Data.
 2. National Center for Education Statistics (NCES). State and County Literacy Estimates.
 3. Becker, Samantha. Opportunity for All: How the American Public Benefits from Internet Access at U.S. Libraries.
