@@ -2,6 +2,7 @@
 Final project: Programming Historian lesson exploring public library access and literacy rates with Python
 
 **Introduction**
+
 Access to public libraries has long been recognized as a crucial factor in promoting literacy, education, and civic engagement. Studies show that areas with greater library access often exhibit higher literacy rates and educational attainment (NCES, 2020). Yet public investment in libraries varies widely across regions, potentially contributing to inequities in literacy outcomes.
 This project explores the question: How does access to public libraries correlate with state-level literacy rates across the United States? Using Python and publicly available datasets, this lesson teaches readers how to analyze, visualize, and interpret geographic and educational data.
 
