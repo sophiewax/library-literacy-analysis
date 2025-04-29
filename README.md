@@ -29,14 +29,13 @@ Full report: https://www.pewresearch.org/internet/2016/09/09/libraries-2016/
 - Datasets formatted for GIS visualization (CSV files ready for upload into ArcGIS).
 - Plan to create heat maps displaying Library density by region, Literacy rates, and Poverty overlays (future work)
 
-**Results**
 Preliminary observations suggest that states with higher library access tend to have higher literacy rates, while regions with fewer libraries per capita often experience lower literacy. Rural areas particularly demonstrate these disparities, suggesting that geographic isolation compounds educational inequality.
 
 Preliminary visualization efforts suggest notable regional disparities, particularly in rural Southern states. Full GIS mapping is in progress and will be included in future versions.
 
 ## Results
 
-Preliminary analysis indicates a strong geographic correlation between public library density and literacy rates. States with a higher number of libraries per capita — such as Vermont, Massachusetts, and Minnesota — tend to report higher literacy rates. Conversely, rural regions in the South and parts of the West, such as Mississippi and New Mexico, show lower literacy rates alongside lower library access.
+Analysis indicates a strong geographic correlation between public library density and literacy rates. States with a higher number of libraries per capita — such as Vermont, Massachusetts, and Minnesota — tend to report higher literacy rates. Conversely, rural regions in the South and parts of the West, such as Mississippi and New Mexico, show lower literacy rates alongside lower library access.
 
 
 **Objectives:**
