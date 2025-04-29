@@ -123,12 +123,11 @@ Questions for future study:
 
 Further research could incorporate more variables, use regression models, or explore spatial patterns with mapping tools.
 
-Other Future Directions
+Other Future Directions:
 1. Mapping Literacy Inequality: Develop interactive GIS maps using ArcGIS StoryMaps or ArcGIS Online.
 2. Multivariable Analysis: Overlay poverty data to see how economic status interacts with library access and literacy.
 3. Granular Analysis: Refine data to the county or ZIP code level for more detailed regional insights.
 4. Historical Analysis: Investigate how historical patterns of library development correlate with present-day literacy gaps.
-![image](https://github.com/user-attachments/assets/2b9304f2-9d9c-46ed-af71-62989377e1ac)
 
 
 **Students:**
