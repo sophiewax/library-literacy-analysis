@@ -39,10 +39,12 @@ Analysis indicates a strong geographic correlation between public library densit
 These results suggest that access to public libraries may play an important role in supporting adult literacy at the state level. However, the relationship is not uniform; socioeconomic factors such as poverty rates, rural-urban divides, and educational funding also likely contribute to disparities. Further research incorporating poverty data and more sophisticated geographic analysis would strengthen the conclusions.
 
 **Future Directions**
+
 1. Socioeconomic Variables: Integrate poverty and educational spending data to better model the factors influencing literacy rates.
 2. Temporal Analysis: Investigate changes over time in library access and literacy rates using longitudinal data.
 
 **Conclusion**
+
 This project demonstrates how digital humanities methods, particularly basic data science and mapping techniques, can be used to uncover patterns of educational equity in the United States. It also highlights the challenges of integrating geographic data and the importance of robust datasets for spatial analysis.
 
 
@@ -63,7 +65,10 @@ You should have:
 - Access to Jupyter Notebook, Google Colab, or a similar Python environment
 - The following Python libraries installed: pandas, matplotlib, seaborn
 - Install libraries (if needed) using pip:
-- python, use code: !pip install pandas matplotlib seaborn
+- python, use code: ```bash
+pip install pandas matplotlib seaborn
+```
+
 
 **Step By Step Tutorial**
 **Step 1: Import Libraries using python**
@@ -75,10 +80,10 @@ import seaborn as sns
 
 **Step 2: Load the Data**
 You will need two datasets:
-1. A list of public library locations by state (available from IMLS Public Library Survey)
-2. Adult literacy rates by state (e.g., from NCES)
+1. A list of public library locations by state (e.g., libraries_by_state.csv)
+2. Adult literacy rates by state (e.g., literacy_rates.csv)
 
-Assume you have two CSV files:
+You have two CSV files:
 1. libraries_by_state.csv; libraries = pd.read_csv('libraries_by_state.csv')
 2. literacy_rates.csv ; literacy = pd.read_csv('literacy_rates.csv')
 
@@ -86,41 +91,59 @@ Example structures:
 - libraries_by_state.csv columns: State, Library_Count
 - literacy_rates.csv columns: State, Literacy_Rate
 
+Load them with:
+```python
+libraries = pd.read_csv('libraries_by_state.csv')
+literacy = pd.read_csv('literacy_rates.csv')
+```
+
 **Step 3: Merge the Datasets**
-- data = pd.merge(libraries, literacy, on='State')  
-- data.head()
+```python
+data = pd.merge(libraries, literacy, on='State')  
+data.head()
+```
 
 **Step 4: Calculate Library Density**
 If you have state population data, calculate libraries per 100,000 residents using the following code: 
-- data['Libraries_per_100k'] = (data['Library_Count'] / data['Population']) * 100000
-
+```python
+data['Libraries_per_100k'] = (data['Library_Count'] / data['Population']) * 100000
+```
 If no population data, proceed with raw counts.
 
 **Step 5: Visualize the Data for Scatterplot of library count vs literacy rate:**
+```python
+plt.figure(figsize=(10,6))
+sns.scatterplot(data=data, x='Library_Count', y='Literacy_Rate')
+plt.title('Public Libraries vs Literacy Rate by State')
+plt.xlabel('Number of Libraries')
+plt.ylabel('Literacy Rate (%)')
+plt.grid(True)
+plt.show()
+```
 
-Copy the following python code:  
-- plt.figure(figsize=(10,6))  
-- sns.scatterplot(data=data, x='Library_Count', y='Literacy_Rate')  
-- plt.title('Public Libraries vs Literacy Rate by State')  
-- plt.xlabel('Number of Libraries')
-- plt.ylabel('Literacy Rate (%)')
-- plt.grid(True)
-- plt.show()
-- Scatterplot with library density (optional):
-
-In a seperate block copy the following python code for scatterplot with library density (optional):
-- sns.scatterplot(data=data, x='Libraries_per_100k', y='Literacy_Rate')
+Scatterplot: Library Density vs Literacy Rate (Optional)
+```python
+sns.scatterplot(data=data, x='Libraries_per_100k', y='Literacy_Rate')
+plt.title('Library Density vs Literacy Rate')
+plt.xlabel('Libraries per 100,000 Residents')
+plt.ylabel('Literacy Rate (%)')
+plt.grid(True)
+plt.show()
+```
 
 **Step 6: Correlation Analysis**
 Calculate Pearson correlation coefficient:
-- correlation = data['Library_Count'].corr(data['Literacy_Rate'])
-- print(f'Correlation between number of libraries and literacy rate: {correlation:.2f}')
+```python
+correlation = data['Library_Count'].corr(data['Literacy_Rate'])
+print(f'Correlation between number of libraries and literacy rate: {correlation:.2f}')
+```
 
 
 Or calculate with library density using the following code:
-- correlation = data['Libraries_per_100k'].corr(data['Literacy_Rate'])
-- print(f'Correlation between library density and literacy rate: {correlation:.2f}')
-
+```python
+correlation = data['Libraries_per_100k'].corr(data['Literacy_Rate'])
+print(f'Correlation between library density and literacy rate: {correlation:.2f}')
+```
   
 Interpretation:
 - Closer to 1: strong positive relationship
@@ -136,22 +159,9 @@ Questions for future study:
 - How have literacy rates changed over time with library expansions or closures?
 
 
-Further research could incorporate more variables, use regression models, or explore spatial patterns with mapping tools.
-
-Other Future Directions:
-1. Mapping Literacy Inequality: Develop interactive GIS maps using ArcGIS StoryMaps or ArcGIS Online.
-2. Multivariable Analysis: Overlay poverty data to see how economic status interacts with library access and literacy.
-3. Granular Analysis: Refine data to the county or ZIP code level for more detailed regional insights.
-4. Historical Analysis: Investigate how historical patterns of library development correlate with present-day literacy gaps.
-
-
-**Students:**
-
-Follow the above lesson to determine if there is a correlation between public library access and literacy rates using the provided csv files. 
-
-
-After visualizing the relationshjip with the scatterplots and running a correlation test, reflect on what factors influence literacy beyond libraries.
-
+**Final Note for Students**
+Follow the steps in this tutorial to determine if there is a correlation between public library access and literacy rates using the provided datasets.
+After visualizing the relationships and running correlation tests, reflect on what additional factors might influence literacy beyond public libraries.
 
 **References**
 1. Institute of Museum and Library Services. Public Libraries Survey Data.
