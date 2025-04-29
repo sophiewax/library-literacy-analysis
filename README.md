@@ -20,6 +20,7 @@ Full report: https://www.pewresearch.org/internet/2016/09/09/libraries-2016/
 These sources offer reliable, government-backed data suitable for exploring educational equity through spatial analysis.
 
 **Methods**
+
 The project workflow includes the following steps:
 1. Loading Datasets: CSV files containing library locations and literacy rates were imported using pandas.
 2. Data Cleaning: Relevant columns were selected, missing values were handled, and datasets were prepared for analysis.
