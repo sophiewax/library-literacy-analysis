@@ -3,7 +3,19 @@ Final project: Exploring public library access and literacy rates with Python
 
 **Introduction**
 
-Public libraries have long been pillars of educational access, providing free resources to communities across the United States. Literacy rates, however, vary widely by region, raising questions about the relationship between library availability and educational outcomes. This lesson will teach you how to use Python to explore this relationship through basic data analysis.
+Public libraries have long been pillars of educational access, providing free resources to communities across the United States. Literacy rates, however, vary widely by region, raising questions about the relationship between library availability and educational outcomes. This project investigates the relationship between public library access and regional literacy rates across the United States. The guiding research question is: How does the density and availability of public libraries correlate with literacy levels, particularly in regions affected by systemic inequalities? This study explores how disparities in library infrastructure may reveal larger patterns of educational inequity, especially between rural and urban areas, and across economically disadvantaged regions.
+
+**Data Sources:**
+1. National Center for Education Statistics (NCES). Public Libraries Survey (PLS) Data and Reports.
+Available at: https://nces.ed.gov/surveys/libraries/
+2. National Center for Education Statistics (NCES). Adult Literacy in the United States: 2019.
+Report link: https://nces.ed.gov/pubs2020/2020070/index.asp
+3. U.S. Census Bureau. Small Area Income and Poverty Estimates (SAIPE).
+Data available at: https://www.census.gov/programs-surveys/saipe.html
+4. American Library Association (ALA). State of America's Libraries Report 2023.
+Available at: https://www.ala.org/news/state-americas-libraries-report-2023
+5. Pew Research Center. Public Library Usage and Importance Survey Report (2016).
+Full report: https://www.pewresearch.org/internet/2016/09/09/libraries-2016/
 
 By the end of this tutorial, you will know how to:
 - Load public datasets into Python
