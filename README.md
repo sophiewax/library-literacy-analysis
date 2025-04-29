@@ -67,13 +67,14 @@ You should have:
 - Access to Jupyter Notebook, Google Colab, or a similar Python environment
 - The following Python libraries installed: pandas, matplotlib, seaborn
 - Install libraries (if needed) using pip:
-- python, use code: ```bash
-pip install pandas matplotlib seaborn
+- python, use code:
+```python
+bash pip install pandas matplotlib seaborn
 ```
-
-
 **Step By Step Tutorial**
+
 **Step 1: Import Libraries using python**
+
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
