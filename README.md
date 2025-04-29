@@ -51,6 +51,7 @@ This project demonstrates how digital humanities methods, particularly basic dat
 
 **Programming Lesson**
 **Objectives:**
+
 By the end of this tutorial, you will know how to:
 - Load public datasets into Python
 - Clean and prepare data for analysis
