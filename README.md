@@ -17,6 +17,21 @@ Available at: https://www.ala.org/news/state-americas-libraries-report-2023
 5. Pew Research Center. Public Library Usage and Importance Survey Report (2016).
 Full report: https://www.pewresearch.org/internet/2016/09/09/libraries-2016/
 
+**Methods**
+1.	Data Cleaning:
+- Standardized state names and abbreviations across datasets.
+- Filtered public library data to active, physical branches only.
+2.	Data Integration:
+- Merged literacy rates with library density information at the state level.
+- Created new variables, such as libraries per 100,000 residents, for better comparability.
+3.	Preparation for Spatial Analysis:
+- Datasets formatted for GIS visualization (CSV files ready for upload into ArcGIS).
+- Plan to create heat maps displaying Library density by region, Literacy rates, and Poverty overlays (future work)
+
+**Results**
+Preliminary observations suggest that states with higher library access tend to have higher literacy rates, while regions with fewer libraries per capita often experience lower literacy. Rural areas particularly demonstrate these disparities, suggesting that geographic isolation compounds educational inequality.
+  
+**Objectives:**
 By the end of this tutorial, you will know how to:
 - Load public datasets into Python
 - Clean and prepare data for analysis
@@ -108,7 +123,17 @@ Questions for future study:
 
 Further research could incorporate more variables, use regression models, or explore spatial patterns with mapping tools.
 
-Students: Follow the above lesson to determine if there is a correlation between public library access and literacy rates using the provided csv files. 
+Other Future Directions
+1. Mapping Literacy Inequality: Develop interactive GIS maps using ArcGIS StoryMaps or ArcGIS Online.
+2. Multivariable Analysis: Overlay poverty data to see how economic status interacts with library access and literacy.
+3. Granular Analysis: Refine data to the county or ZIP code level for more detailed regional insights.
+4. Historical Analysis: Investigate how historical patterns of library development correlate with present-day literacy gaps.
+![image](https://github.com/user-attachments/assets/2b9304f2-9d9c-46ed-af71-62989377e1ac)
+
+
+**Students:**
+
+Follow the above lesson to determine if there is a correlation between public library access and literacy rates using the provided csv files. 
 
 
 After visualizing the relationshjip with the scatterplots and running a correlation test, reflect on what factors influence literacy beyond libraries.
