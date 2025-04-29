@@ -35,6 +35,7 @@ All analysis was conducted using Python, primarily in Jupyter Notebook, using li
 Analysis indicates a strong geographic correlation between public library density and literacy rates. States with a higher number of libraries per capita — such as Vermont, Massachusetts, and Minnesota — tend to report higher literacy rates. Conversely, rural regions in the South and parts of the West, such as Mississippi and New Mexico, show lower literacy rates alongside lower library access.
 
 **Discussion**
+
 These results suggest that access to public libraries may play an important role in supporting adult literacy at the state level. However, the relationship is not uniform; socioeconomic factors such as poverty rates, rural-urban divides, and educational funding also likely contribute to disparities. Further research incorporating poverty data and more sophisticated geographic analysis would strengthen the conclusions.
 
 **Future Directions**
