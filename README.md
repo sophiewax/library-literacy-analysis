@@ -67,11 +67,11 @@ You should have:
 
 **Step By Step Tutorial**
 **Step 1: Import Libraries using python**
-
-Copy the following the code: 
-- import pandas as pd
-- import matplotlib.pyplot as plt
-- import seaborn as sns
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
 
 **Step 2: Load the Data**
 You will need two datasets:
