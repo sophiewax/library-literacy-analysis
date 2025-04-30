@@ -35,6 +35,22 @@ All analysis was conducted using Python, primarily in Jupyter Notebook, using li
 
 Analysis indicates a strong geographic correlation between public library density and literacy rates. States with a higher number of libraries per capita — such as Vermont, Massachusetts, and Minnesota — tend to report higher literacy rates. Conversely, rural regions in the South and parts of the West, such as Mississippi and New Mexico, show lower literacy rates alongside lower library access.
 
+The following map visualizes public library density across U.S. states, using proportional circles to indicate the number of libraries in each state:
+
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/78738d1c-6e2e-4d12-b04d-5251d9e22491" />
+
+Figure: Geographic distribution of public libraries in the United States.
+
+This map is a critical component of the analysis for three key reasons:
+
+1. It visualizes geographic inequality:
+The map makes disparities in library access immediately visible. States with dense clusters (e.g., in the Northeast and Midwest) contrast sharply with sparsely covered areas like the West or parts of the South, highlighting regions that may be underserved.
+2. It reinforces quantitative findings:
+While scatterplots help reveal statistical relationships between library access and literacy rates, this map grounds those numbers in physical space. It allows viewers to intuitively connect infrastructure gaps with potential educational inequities.
+3. It demonstrates digital humanities methodology:
+By integrating basic geographic information systems (GIS) techniques into a humanities-driven inquiry, this project showcases how spatial analysis tools can support broader arguments about social equity. Even as a static image, the map aligns with spatial humanities practices by linking data to place.
+
+
 **Discussion**
 
 These results suggest that access to public libraries may play an important role in supporting adult literacy at the state level. However, the relationship is not uniform; socioeconomic factors such as poverty rates, rural-urban divides, and educational funding also likely contribute to disparities. Further research incorporating poverty data and more sophisticated geographic analysis would strengthen the conclusions.
