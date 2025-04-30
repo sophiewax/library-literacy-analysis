@@ -39,7 +39,7 @@ The following map visualizes public library density across U.S. states, using pr
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/78738d1c-6e2e-4d12-b04d-5251d9e22491" />
 
-Figure: Geographic distribution of public libraries in the United States.
+Figure: Geographic distribution of public libraries in the United States. Made with ArcGIS online. 
 
 This map is a critical component of the analysis for three key reasons:
 
