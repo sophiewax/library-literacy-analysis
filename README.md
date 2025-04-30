@@ -41,7 +41,7 @@ The following map visualizes public library density across U.S. states, using pr
 
 Figure: Geographic distribution of public libraries in the United States. Made with ArcGIS online. 
 
-This map is a critical component of the analysis for three key reasons:
+This map provides spatial insight into the national distribution of public libraries, highlighting regional disparities and supporting the argument that educational infrastructure is unevenly distributed, which is a critical component of the analysis for three key reasons:
 
 1. It visualizes geographic inequality:
 The map makes disparities in library access immediately visible. States with dense clusters (e.g., in the Northeast and Midwest) contrast sharply with sparsely covered areas like the West or parts of the South, highlighting regions that may be underserved.
@@ -186,10 +186,10 @@ Questions for future study:
 Follow the steps in this tutorial to determine if there is a correlation between public library access and literacy rates using the provided datasets.
 After visualizing the relationships and running correlation tests, reflect on what additional factors might influence literacy beyond public libraries.
 
-**References**
+**Bibliography**
 
 1. Institute of Museum and Library Services. Public Libraries Survey Data.
 2. National Center for Education Statistics (NCES). State and County Literacy Estimates.
 3. Becker, Samantha. Opportunity for All: How the American Public Benefits from Internet Access at U.S. Libraries.
 4. Johnson, Catherine A. "How Do Public Libraries Create Social Capital? An Analysis of Interactions between Library Staff and Patrons." Library and Information Science Research 34 (2012): 52-62.
-5. U.S. Census Bureau. American Community Survey.
+5. U.S. Census Bureau. Poverty Rate by State. https://www.census.gov/library/stories/2021/10/poverty-rates-in-2020.html
