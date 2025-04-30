@@ -87,7 +87,8 @@ You should have:
 ```python
 bash pip install pandas matplotlib seaborn
 ```
-**Step By Step Tutorial**
+
+## Step-by-Step Tutorial: Analyzing Libraries and Literacy in Python
 
 **Step 1: Import Libraries using python**
 
